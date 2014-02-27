@@ -3,6 +3,8 @@
 -- By VanessaE, sfan5, and kaeza.
 -- more disallowed by crazyginger72
 
+
+--added profanity filter to list
 local disallowed = { 
 	
 	["[s]+[u]+[k]+[a4]+"]                =   "profanity names are not allowed" ..  
