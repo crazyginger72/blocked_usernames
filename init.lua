@@ -48,7 +48,7 @@ local disallowed = {
     ["[p]+[u]+[s]+"]                =   "close to profanity names are not allowed" ..  
                                 "please choose a proper name",
 
-    ["[c]+[r]+[4a]+[z]+[y]+[g]+[i1l]+[g]+[3e]+[r]+"]  =  "that is too close to the server owners name"..         
+    ["[c]+[r]+[4a]+[z]+[y]+[g]+[i1l]+[n]+[g]+[3e]+[r]+"]  =  "that is too close to the server owners name"..         
                                "pick a new name",
 
 	["guest"]				=	"Guest accounts are disallowed on this server.  "..
