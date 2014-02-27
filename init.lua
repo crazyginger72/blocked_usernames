@@ -7,34 +7,48 @@ local disallowed = {
 	
 	["[s]+[u]+[k]+[a4]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[s]+[u]+[c]+[a4]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[s]+[u]+[c]+[k]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[d]+[1il]+[c]+[k]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
 	["[c]+[u]+[n]+[t]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[n]+[1il]+[g]+[e3]+[r]+"]                =  "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[s]+[h]+[1li]+[t]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[p]+[u]+[s]+[y]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[f]+[u]+[c]+[k]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
 	["[n]+[i1l]+[g]+[a4]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
     ["[t]+[w]+[4a]+[t]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
     ["[c]+[o0]+[c]+[k]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
     ["[b]+[i1l]+[t]+[c]+[h]+"]                =   "profanity names are not allowed" ..  
                                 "please choose a proper name",
+
     ["[p]+[u]+[s]+"]                =   "close to profanity names are not allowed" ..  
                                 "please choose a proper name",
-    ["[c]+[r]+[4a]+[z]+[y]+[g]+[i1l]=[g]+[3e]+[r]+"]  =  "that is too close to the server owners name"..         
-                                "pick a new name",
+
+    ["[c]+[r]+[4a]+[z]+[y]+[g]+[i1l]+[g]+[3e]+[r]+"]  =  "that is too close to the server owners name"..         
+                               "pick a new name",
+
 	["guest"]				=	"Guest accounts are disallowed on this server.  "..
 								"Please choose a proper username and try again.",
 	["[4a]dm[1il]n"]		=	"That is a clearly false, misleading, or otherwise disallowed username. "..
@@ -97,7 +111,7 @@ minetest.register_on_prejoinplayer(function(name, ip)
      
              if #name < 2 then
                     return "Too short of a username. "..
-                                     "Please pick a name with at least two letters and try ag$
+                                     "Please pick a name with at least two letters and try agin."
              end
 
              if not judge(name) and #name > 5 then
